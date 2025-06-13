@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_my_first_dbt_model
+    description: "A staging model for greeting messages"
+    columns:
+      - name: greeting
+        description: "A greeting string"
+        tests:
+          - not_null
+
